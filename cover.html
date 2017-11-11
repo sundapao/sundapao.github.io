@@ -1,0 +1,760 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="cover
+    
+    
+
+
+
+
+
+    
+    
+        
+
+
+
+
+     Mrakeditor使用（一）">
+<meta property="og:type" content="website">
+<meta property="og:title" content="sundapao的Hexo博客">
+<meta property="og:url" content="https://sundapao.github.io/cover.html">
+<meta property="og:site_name" content="sundapao的Hexo博客">
+<meta property="og:description" content="cover
+    
+    
+
+
+
+
+
+    
+    
+        
+
+
+
+
+     Mrakeditor使用（一）">
+<meta property="og:updated_time" content="2017-11-11T10:33:33.708Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="sundapao的Hexo博客">
+<meta name="twitter:description" content="cover
+    
+    
+
+
+
+
+
+    
+    
+        
+
+
+
+
+     Mrakeditor使用（一）">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":true},
+    fancybox: false,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://sundapao.github.io/cover.html"/>
+
+
+
+
+
+  <title>
+  
+
+  
+     | sundapao的Hexo博客
+  
+</title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left  ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">sundapao的Hexo博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description"></h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocapitalize="off" autocomplete="off" autocorrect="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+  <header class="post-header">
+
+	<h2 class="post-title" itemprop="name headline"></h2>
+
+
+
+</header>
+
+    
+    
+      
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta name="renderer" content="webkit">
+    <title>cover</title>
+    <link rel="stylesheet" href="data:text/css;base64,CiAgICA6Oi13ZWJraXQtc2Nyb2xsYmFyIHsKICAgICAgICB3aWR0aDo4cHg7CiAgICAgICAgbWFyZ2luOjAgMXB4OwogICAgICAgIGJhY2tncm91bmQ6ICNmZGZkZmQ7CiAgICB9CiAgICA6Oi13ZWJraXQtc2Nyb2xsYmFyOmhvcml6b250YWx7CiAgICAgICAgaGVpZ2h0OiA4cHg7CiAgICB9CgogICAgOjotd2Via2l0LXNjcm9sbGJhci1idXR0b257CiAgICAgICAgaGVpZ2h0OiAwOwogICAgfQoKICAgIDo6LXdlYmtpdC1zY3JvbGxiYXItdHJhY2sgewogICAgICAgIGJvcmRlci1yYWRpdXM6IDRweDsKICAgIH0KICAgIDo6LXdlYmtpdC1zY3JvbGxiYXItdHJhY2stcGllY2UgewogICAgICAgIGJhY2tncm91bmQtY29sb3I6ICNmZGZkZmQ7CiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4OwogICAgfQogICAgOjotd2Via2l0LXNjcm9sbGJhci10aHVtYiB7CiAgICAgICAgd2lkdGg6OHB4OwogICAgICAgIG1hcmdpbjogMCAxcHg7CiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4OwogICAgICAgIGJhY2tncm91bmQ6ICNjNGM0YzQ7CiAgICB9CiAgICA6Oi13ZWJraXQtc2Nyb2xsYmFyLXRodW1iOmhvdmVyIHsKICAgICAgICBiYWNrZ3JvdW5kOiAjOTA5MDkwOwogICAgfQoKCgoKICAgIGJvZHkgewogICAgICAgIGJhY2tncm91bmQ6ICNmZmZmZmY7CiAgICAgICAgZm9udC1zaXplOiAyM3B4OwogICAgICAgIGxpbmUtaGVpZ2h0OjIuMTAyNTsKICAgICAgICBmb250LWZhbWlseTogQXJpYWw7CiAgICAgICAgZm9udC13ZWlnaHQ6IG5vcm1hbDsKICAgICAgICBjb2xvcjogIzNjM2MzYzsKICAgICAgICBwYWRkaW5nOiAwIDM4cHg7CiAgICAgICAgbWF4LXdpZHRoOiA4MjBweDsKICAgICAgICBtYXJnaW46IDAgYXV0bzsKICAgICAgICB3b3JkLXdyYXA6YnJlYWstd29yZDsKCiAgICAgICAgb3ZlcmZsb3cteDogaGlkZGVuOwogICAgICAgIHRleHQtcmVuZGVyaW5nOiBvcHRpbWl6ZUxlZ2liaWxpdHk7CiAgICAgICAgLXdlYmtpdC10ZXh0LXNpemUtYWRqdXN0OiBub25lOwogICAgfQoKICAgIGJyewogICAgICAgIGxpbmUtaGVpZ2h0OiAyLjEwMjU7CiAgICB9CgoKCiAgICBAbWVkaWEgKG1heC13aWR0aDogNjAwcHgpIHsKICAgICAgICBib2R5ewogICAgICAgICAgICBwYWRkaW5nOiAwIDMwcHg7CiAgICAgICAgfQogICAgfQoKICAgIEBtZWRpYSAobWF4LXdpZHRoOiA0ODBweCkgewogICAgICAgIGJvZHl7CiAgICAgICAgICAgIHBhZGRpbmc6IDAgMjBweDsKICAgICAgICB9CiAgICB9CgogICAgLmdpc3R7CiAgICAgICAgd29yZC1icmVhazogbm9ybWFsOwogICAgfQoKICAgIC5wb3N0ewogICAgICAgIG1hcmdpbi10b3A6IDEwcHg7CiAgICAgICAgbWFyZ2luLWJvdHRvbTogNTBweDsKICAgICAgICBwb3NpdGlvbjogcmVsYXRpdmU7CiAgICB9CgoKCiAgICBpbWd7CiAgICAgICAgbWF4LXdpZHRoOiA5OCU7CiAgICAgICAgbWFyZ2luOiAwLjhlbSBhdXRvIDAuOGVtIGF1dG87CiAgICAgICAgYm9yZGVyLXJhZGl1czogNXB4OwogICAgfQoKICAgIGgxIGltZywgaDIgaW1nLCBoMyBpbWcsIGg0IGltZywgaDUgaW1nLCBoNiBpbWd7CiAgICAgICAgbWFyZ2luOiBhdXRvOwogICAgfQoKICAgIC54Ml9pbWFnZXsKICAgICAgICB6b29tOiA1MCU7CiAgICB9CgogICAgLngzX2ltYWdlewogICAgICAgIHpvb206IDMzLjMzJTsKICAgIH0KCiAgICAueDRfaW1hZ2V7CiAgICAgICAgem9vbTogMjUlOwogICAgfQoKCiAgICBwIGltZ3sKICAgICAgICBtYXJnaW46IDAgYXV0bzsKICAgIH0KCiAgICBwewogICAgICAgIHdvcmQtd3JhcDpicmVhay13b3JkOwogICAgICAgIG92ZXJmbG93OmhpZGRlbjsKICAgICAgICBtYXJnaW46IDEuNWVtIDA7CiAgICB9CgogICAgbGkgcHsKICAgICAgICBsaW5lLWhlaWdodDogMS44ODU7CiAgICAgICAgbWFyZ2luOiAwOwogICAgfQoKICAgIC5wX3BhcnQgewogICAgICAgIG1hcmdpbjogMTBweCAwOwogICAgfQoKICAgIC5wX3BhcnQgcHsKICAgICAgICBtYXJnaW46IDAgMCAwLjZlbSAwOwogICAgfQoKICAgIC8qIHRleHQgaW5kZW50IGZvciBjaGluZXNlIHN0YXJ0cyovCiAgICAvKmgyLCBoMywgaDQsIGg1LCBoNiwgLnBfcGFydCBwLCAudG9kb19pdGVtLCBwewogICAgICAgIHRleHQtaW5kZW50OiAwcHg7CiAgICB9Ki8KICAgIHRhYmxlLCBwcmUsIHN2ZywgLmNvZGVoaWxpdGV0YWJsZXsKICAgICAgICBtYXJnaW4tbGVmdDogMHB4OwogICAgICAgIG1hcmdpbi1yaWdodDogMHB4OwogICAgfQoKICAgIC5jb2RlaGlsaXRldGFibGUgcHJlewogICAgICAgIG1hcmdpbi1sZWZ0OiAwOwogICAgICAgIG1hcmdpbi1yaWdodDogMDsKCiAgICB9CgogICAgLmNvZGVoaWxpdGV0YWJsZSAuY29kZWhpbGl0ZSBwcmV7CiAgICAgICAgYm9yZGVyLWxlZnQ6IG5vbmU7CiAgICB9CgogICAgLyogdGV4dCBpbmRlbnQgZm9yIGNoaW5lc2UgZW5kcyovCgoKICAgIGJsb2NrcXVvdGUgLnBfcGFydCBwLCBsaSAucF9wYXJ0IHB7CiAgICAgICAgdGV4dC1pbmRlbnQ6IDAgIWltcG9ydGFudDsKICAgIH0KCgogICAgaHJ7CiAgICAgICAgbWFyZ2luOiAzOHB4IDA7CiAgICAgICAgYm9yZGVyOiBub25lOwogICAgICAgIGJvcmRlci1ib3R0b206IDFweCBkYXNoZWQgI2UzZTNlMzsKICAgICAgICBjb2xvcjogI2UzZTNlMzsKICAgICAgICBoZWlnaHQ6IDFweDsKICAgICAgICBsaW5lLWhlaWdodDoxcHg7CiAgICAgICAgZm9udC1zaXplOjFweDsKICAgICAgICBvdmVyZmxvdzogaGlkZGVuOwogICAgfQoKCiAgICBoMXsKICAgICAgICBjb2xvcjogIzEwYTNlZTsKICAgICAgICBmb250LXNpemU6IDEuN2VtOwogICAgICAgIHRleHQtYWxpZ246IGxlZnQ7CiAgICAgICAgbWFyZ2luOiAwOwogICAgICAgIHBhZGRpbmc6IDA7CiAgICAgICAgbGluZS1oZWlnaHQ6IDEuNmVtOwogICAgICAgIG1hcmdpbi10b3A6IDAuOGVtOwogICAgICAgIG1hcmdpbi1ib3R0b206IDAuNmVtOwogICAgfQoKICAgIGgxLCBoMiwgaDMsIGg0ewogICAgICAgIGNvbG9yOiAjMTBhM2VlOwogICAgfQoKICAgIGgxLCBoMiwgaDN7CiAgICAgICAgZm9udC13ZWlnaHQ6IG5vcm1hbDsKICAgIH0KCiAgICBoMiwgaDN7CiAgICAgICAgbGluZS1oZWlnaHQ6IDEuNWVtOwogICAgICAgIG1hcmdpbi10b3A6IDEuNWVtOwogICAgICAgIG1hcmdpbi1ib3R0b206IDAuOGVtOwogICAgfQoKICAgIGgyIHsKICAgICAgICBmb250LXNpemU6IDEuNDVlbTsKICAgIH0KCiAgICBoMyB7CiAgICAgICAgZm9udC1zaXplOiAxLjI1ZW0KICAgIH0KCgogICAgb2wgewogICAgICAgIG1hcmdpbjogMDsKICAgIH0KCiAgICB1bHsKICAgICAgICBwYWRkaW5nOiA1cHggMzhweDsKICAgICAgICBtYXJnaW46IDA7CiAgICB9CgogICAgdWwgbGksIGxpewogICAgICAgIHBhZGRpbmc6IDA7CiAgICAgICAgbWFyZ2luOiAwOwogICAgfQoKICAgIHVsIHAsIG9sIHB7CiAgICAgICAgb3ZlcmZsb3c6IHZpc2libGU7CiAgICB9CgoKICAgIGJsb2NrcXVvdGUgewogICAgICAgIC1tb3otYm94LXNpemluZzogYm9yZGVyLWJveDsKICAgICAgICBib3gtc2l6aW5nOiBib3JkZXItYm94OwogICAgICAgIG1hcmdpbjogMS42ZW0gMDsKICAgICAgICBwYWRkaW5nOiAwIDAgMCAxLjJlbTsKICAgICAgICBib3JkZXItbGVmdDogMC40ZW0gc29saWQgI2RkZGRkZDsKICAgICAgICBjb2xvcjogIzg4ODg4ODsKICAgICAgICBtaW4taGVpZ2h0OjIwcHg7CiAgICB9CgoKICAgIGJsb2NrcXVvdGUgcCB7CiAgICAgICAgbWFyZ2luOiAwLjhlbSAwOwogICAgfQoKICAgIGJsb2NrcXVvdGUgc3Bhbi5tZF9saW5lIHsKICAgICAgICBtYXJnaW4tYm90dG9tOiAwLjI1ZW07CiAgICAgICAgbWFyZ2luLXRvcDogMC4yNWVtOwogICAgfQoKICAgIGJsb2NrcXVvdGUgdWx7CiAgICAgICAgcGFkZGluZzogMCAxNXB4OwogICAgfQoKICAgIGJsb2NrcXVvdGUgc21hbGwgewogICAgICAgIGRpc3BsYXk6IGlubGluZS1ibG9jazsKICAgICAgICBtYXJnaW46IDAuOGVtIDAgMC44ZW0gMS41ZW07CiAgICAgICAgZm9udC1zaXplOiAwLjllbTsKICAgICAgICBjb2xvcjogI2NjYzsKICAgIH0KCgoKICAgIHRhYmxlIHsKICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiB0cmFuc3BhcmVudDsKICAgICAgICBib3JkZXItY29sbGFwc2U6IGNvbGxhcHNlOwogICAgICAgIGJvcmRlci1zcGFjaW5nOiAwOwogICAgICAgIGJvcmRlcjogMXB4IHNvbGlkICNkOWQ5ZDk7CiAgICAgICAgYm9yZGVyLWxlZnQ6IDA7CiAgICAgICAgbWFyZ2luLXRvcDogMjBweDsKICAgICAgICBtYXJnaW4tYm90dG9tOiAyMHB4OwogICAgfQoKCiAgICB0aCwgdGQgewogICAgICAgIGJvcmRlci1sZWZ0OiAxcHggc29saWQgI2Q5ZDlkOTsKICAgICAgICBwYWRkaW5nOiA4cHg7CiAgICAgICAgbGluZS1oZWlnaHQ6IDIwcHg7CiAgICAgICAgdGV4dC1hbGlnbjogbGVmdDsKICAgICAgICB2ZXJ0aWNhbC1hbGlnbjogdG9wOwogICAgICAgIGJvcmRlci10b3A6IDFweCBzb2xpZCAjZDlkOWQ5OwogICAgfQoKCgoKICAgIGNvZGV7CiAgICAgICAgYmFja2dyb3VuZDogI2Y1ZjVmNTsKICAgICAgICBwYWRkaW5nOiAwIDVweDsKICAgICAgICBtYXJnaW46IDAgMnB4OwogICAgfQoKICAgIHByZXsKICAgICAgICBib3JkZXI6IDFweCBzb2xpZCAjZTZlNmU2OwogICAgICAgIG1hcmdpbi10b3A6IDEuMmVtOwogICAgICAgIG1hcmdpbi1ib3R0b206IDEuMmVtOwogICAgICAgIHBhZGRpbmc6IDE1cHggMTBweDsKICAgICAgICBkaXNwbGF5OiBibG9jazsKICAgICAgICBvdmVyZmxvdzogYXV0bzsKICAgICAgICBiYWNrZ3JvdW5kOiAjZjdmN2Y3OwogICAgICAgIGZvbnQtc2l6ZTogOTAlOwogICAgfQoKICAgIC53aXRoX2xpbmVzIHByZXsKICAgICAgICBib3JkZXI6bm9uZTsKICAgICAgICBtYXJnaW4tdG9wOiAwLjJlbTsKICAgICAgICBtYXJnaW4tYm90dG9tOiAwLjJlbTsKICAgICAgICBiYWNrZ3JvdW5kOiB0cmFuc3BhcmVudDsKICAgIH0KCiAgICAuaXNfY29kZV9maWxlIHByZXsKICAgICAgICBib3JkZXI6IG5vbmU7CiAgICAgICAgYmFja2dyb3VuZDogdHJhbnNwYXJlbnQ7CiAgICB9CgogICAgLmNvZGVoaWxpdGUgcHJlewogICAgICAgIHdvcmQtd3JhcDogbm9ybWFsOwogICAgfQoKICAgIHByZSBjb2RlewogICAgICAgIGJvcmRlcjpub25lOwogICAgICAgIGJhY2tncm91bmQ6IG5vbmU7CiAgICAgICAgcGFkZGluZzogMDsKICAgICAgICBtYXJnaW46IDA7CiAgICB9CgogICAgcHJlIHB7CiAgICAgICAgbWFyZ2luOiAwOwogICAgICAgIHBhZGRpbmc6IDA7CiAgICB9CgogICAgLmNvZGVoaWxpdGUgdGgsIC5jb2RlaGlsaXRlIHRkewogICAgICAgIGxpbmUtaGVpZ2h0OiAxLjhlbTsKICAgIH0KCgogICAgYXsKICAgICAgICBjb2xvcjogIzQwODNjNDsKICAgICAgICB0ZXh0LWRlY29yYXRpb246IG5vbmU7CiAgICAgICAgLy9ib3JkZXItYm90dG9tOiAxcHggc29saWQgdHJhbnNwYXJlbnQ7CiAgICB9CgogICAgYTpob3ZlcnsKICAgICAgICB0ZXh0LWRlY29yYXRpb246IHVuZGVybGluZTsKICAgICAgICAvL2JvcmRlci1ib3R0b206IDFweCBzb2xpZCAjNDA4M2M0OwogICAgfQoKICAgIHN0cm9uZyB7CiAgICAgICAgY29sb3I6ICMwMDAwMDA7CiAgICAgICAgZm9udC13ZWlnaHQ6IGJvbGQ7CiAgICB9CgoKICAgIC8qIGZvciBtYXJrZG93biAqLwoKICAgIC5saW5lbm9zIHByZXsKCQliYWNrZ3JvdW5kOiB0cmFuc3BhcmVudDsKCQlib3JkZXI6IG5vbmU7Cgl9CgkvKgoJLmxpbmVub3N7CgkgICAgcGFkZGluZzogMCAwIDAgMTBweDsKCX0KCSovCgogICAgLnRvY3sKICAgICAgICBiYWNrZ3JvdW5kOiAjZmRmZGZkOwogICAgICAgIGJvcmRlci1yYWRpdXM6IDVweDsKICAgICAgICBib3JkZXI6IDFweCBzb2xpZCAjZTZlNmU2OwogICAgICAgIG1hcmdpbjogMjdweCAwIDQ3cHggMDsKICAgICAgICBwYWRkaW5nOiAxMHB4IDA7CiAgICB9CgogICAgLnRvYyB1bHsKICAgICAgICAvL3BhZGRpbmc6IDVweCA0MnB4OwogICAgfQoKICAgIC50b2MgdWwgbGl7CiAgICAgICAgcGFkZGluZzogMDsKICAgICAgICBtYXJnaW46IDA7CiAgICB9CiAgICAudG9jIGF7CiAgICAgICAgY29sb3I6ICMzYzNjM2M7CiAgICB9CgoKCiAgICAudG9kb19pdGVtewogICAgICAgIGxpc3Qtc3R5bGU6IG5vbmU7CiAgICAgICAgbWFyZ2luLWxlZnQ6IC0xLjVlbQogICAgfQogICAgLnRvZG9faXRlbSAudG9kb19pdGVtIHsKICAgICAgICBtYXJnaW4tbGVmdDogYXV0bzsKICAgIH0KCiAgICAudG9kb19kb25lX2l0ZW17CiAgICAgICAgY29sb3I6ICM5OTk5OTk7CiAgICB9CgogICAgLnRvZG9fdW5kb25lX2l0ZW17CiAgICAgICAgY29sb3I6ICNjODVhNTc7CiAgICB9CgoKICAgIHVsIGxpLnRvZG9faXRlbXsKCWxpc3Qtc3R5bGUtdHlwZTogbm9uZTsKICAgIH0KCiAgICB1bCBsaS50b2RvX2l0ZW06YmVmb3JlewogICAgICAgIGNvbnRlbnQ6ICdcMjcxNSc7CiAgICAgICAgcGFkZGluZy1yaWdodDogMC43ZW07CiAgICAgICAgZm9udC1mYW1pbHk6IGFyaWFsOwogICAgfQoKICAgIHVsIGxpLnRvZG9fZG9uZV9pdGVtOmJlZm9yZXsKICAgICAgICBjb250ZW50OiAnXDI3MTMnOwogICAgICAgIHBhZGRpbmctcmlnaHQ6IDAuN2VtOwogICAgICAgIGZvbnQtZmFtaWx5OiBhcmlhbDsKICAgIH0KCiAgICB1bCBsaS50b2RvX2l0ZW0gaW5wdXR7CiAgICAgICAgZGlzcGxheTpub25lCiAgICB9CgoKICAgIC8qcHlnbWVudHMqLwoKICAgIC5jb2RlaGlsaXRlewogICAgICAgIGJhY2tncm91bmQ6IHRyYW5zcGFyZW50ICFpbXBvcnRhbnQ7CiAgICB9CgogICAgdGFibGUuY29kZWhpbGl0ZXRhYmxleyBib3JkZXI6bm9uZTsgfQoKCiAgICAuY29kZWhpbGl0ZXRhYmxlIHRkeyBib3JkZXI6IG5vbmU7IHBhZGRpbmc6IDA7fQoKICAgIC5mbG93LWdyYXBoaWN7dGV4dC1hbGlnbjogY2VudGVyfQoKCiAgICB0YWJsZSwgdHIsIHRkLCB0aCwgdGJvZHksIHRoZWFkLCB0Zm9vdCwgLm1kX2VjaGFydHMsIGJsb2NrcXVvdGUgLm1kX2xpbmV7CiAgICAgICAgcGFnZS1icmVhay1pbnNpZGU6IGF2b2lkICFpbXBvcnRhbnQ7CiAgICB9CgogICAgLmZvb3Rub3RlcyAubWRfbGluZXsKICAgICAgICBkaXNwbGF5OiBpbmxpbmUgIWltcG9ydGFudDsKICAgIH0KCgogICAgLmltZ19ydF85MHsKICAgICAgICB0cmFuc2Zvcm06cm90YXRlKDkwZGVnKTsKICAgICAgICAtbXMtdHJhbnNmb3JtOnJvdGF0ZSg5MGRlZyk7CiAgICAgICAgLW1vei10cmFuc2Zvcm06cm90YXRlKDkwZGVnKTsKICAgICAgICAtd2Via2l0LXRyYW5zZm9ybTpyb3RhdGUoOTBkZWcpOwogICAgICAgIC1vLXRyYW5zZm9ybTpyb3RhdGUoOTBkZWcpOwogICAgfQogICAgLmltZ19ydF8xODB7CiAgICAgICAgdHJhbnNmb3JtOnJvdGF0ZSgxODBkZWcpOwogICAgICAgIC1tcy10cmFuc2Zvcm06cm90YXRlKDE4MGRlZyk7CiAgICAgICAgLW1vei10cmFuc2Zvcm06cm90YXRlKDE4MGRlZyk7CiAgICAgICAgLXdlYmtpdC10cmFuc2Zvcm06cm90YXRlKDE4MGRlZyk7CiAgICAgICAgLW8tdHJhbnNmb3JtOnJvdGF0ZSgxODBkZWcpOwogICAgfQogICAgLmltZ19ydF8yNzB7CiAgICAgICAgdHJhbnNmb3JtOnJvdGF0ZSgyNzBkZWcpOwogICAgICAgIC1tcy10cmFuc2Zvcm06cm90YXRlKDI3MGRlZyk7CiAgICAgICAgLW1vei10cmFuc2Zvcm06cm90YXRlKDI3MGRlZyk7CiAgICAgICAgLXdlYmtpdC10cmFuc2Zvcm06cm90YXRlKDI3MGRlZyk7CiAgICAgICAgLW8tdHJhbnNmb3JtOnJvdGF0ZSgyNzBkZWcpOwogICAgfQoKICAgIC5tZF9oYXNfYmxvY2tfYmVsb3d7CiAgICAgICAgbWFyZ2luLWJvdHRvbTogMC4xZW0gIWltcG9ydGFudDsKICAgIH0KICAgIC5tZF9oYXNfYmxvY2tfYmVsb3dfaW1newogICAgICAgIG1hcmdpbi1ib3R0b206IC0wLjZlbSAhaW1wb3J0YW50OwogICAgfQoKCgogICAgICAgIHNwYW4ubWRfbGluZXttYXJnaW4tYm90dG9tOjAuNWVtOyBkaXNwbGF5OmJsb2NrOyBsaW5lLWhlaWdodDoxLjgxODY2MjV9CiAgICAgICAgLm1kX2xpbmUgYnJ7IGRpc3BsYXk6IG5vbmU7fQogICAgICAgIC5jb2RlaGlsaXRlIC5obGwgeyBiYWNrZ3JvdW5kLWNvbG9yOiAjZmZmZmNjIH0KLmNvZGVoaWxpdGUgIHsgYmFja2dyb3VuZDogI2VlZWVkZDsgfQouY29kZWhpbGl0ZSAuYyB7IGNvbG9yOiAjOTk5OTk5IH0gLyogQ29tbWVudCAqLwouY29kZWhpbGl0ZSAuZXJyIHsgY29sb3I6ICNhNjE3MTc7IGJhY2tncm91bmQtY29sb3I6ICNlM2QyZDIgfSAvKiBFcnJvciAqLwouY29kZWhpbGl0ZSAuayB7IGNvbG9yOiAjOEIwMDhCOyBmb250LXdlaWdodDogYm9sZCB9IC8qIEtleXdvcmQgKi8KLmNvZGVoaWxpdGUgLm4geyBjb2xvcjogIzU1NTU1NSB9IC8qIE5hbWUgKi8KLmNvZGVoaWxpdGUgLm8geyBjb2xvcjogIzU1NTU1NSB9IC8qIE9wZXJhdG9yICovCi5jb2RlaGlsaXRlIC5wIHsgY29sb3I6ICM1NTU1NTUgfSAvKiBQdW5jdHVhdGlvbiAqLwouY29kZWhpbGl0ZSAuY2ggeyBjb2xvcjogIzk5OTk5OSB9IC8qIENvbW1lbnQuSGFzaGJhbmcgKi8KLmNvZGVoaWxpdGUgLmNtIHsgY29sb3I6ICM5OTk5OTkgfSAvKiBDb21tZW50Lk11bHRpbGluZSAqLwouY29kZWhpbGl0ZSAuY3AgeyBjb2xvcjogIzFlODg5YiB9IC8qIENvbW1lbnQuUHJlcHJvYyAqLwouY29kZWhpbGl0ZSAuY3BmIHsgY29sb3I6ICM5OTk5OTkgfSAvKiBDb21tZW50LlByZXByb2NGaWxlICovCi5jb2RlaGlsaXRlIC5jMSB7IGNvbG9yOiAjOTk5OTk5IH0gLyogQ29tbWVudC5TaW5nbGUgKi8KLmNvZGVoaWxpdGUgLmNzIHsgY29sb3I6ICM4QjAwOEI7IGZvbnQtd2VpZ2h0OiBib2xkIH0gLyogQ29tbWVudC5TcGVjaWFsICovCi5jb2RlaGlsaXRlIC5nZCB7IGNvbG9yOiAjYWEwMDAwIH0gLyogR2VuZXJpYy5EZWxldGVkICovCi5jb2RlaGlsaXRlIC5nZSB7IGZvbnQtc3R5bGU6IGl0YWxpYyB9IC8qIEdlbmVyaWMuRW1waCAqLwouY29kZWhpbGl0ZSAuZ3IgeyBjb2xvcjogI2FhMDAwMCB9IC8qIEdlbmVyaWMuRXJyb3IgKi8KLmNvZGVoaWxpdGUgLmdoIHsgY29sb3I6ICMwMDAwODA7IGZvbnQtd2VpZ2h0OiBib2xkIH0gLyogR2VuZXJpYy5IZWFkaW5nICovCi5jb2RlaGlsaXRlIC5naSB7IGNvbG9yOiAjMDBhYTAwIH0gLyogR2VuZXJpYy5JbnNlcnRlZCAqLwouY29kZWhpbGl0ZSAuZ28geyBjb2xvcjogIzg4ODg4OCB9IC8qIEdlbmVyaWMuT3V0cHV0ICovCi5jb2RlaGlsaXRlIC5ncCB7IGNvbG9yOiAjNTU1NTU1IH0gLyogR2VuZXJpYy5Qcm9tcHQgKi8KLmNvZGVoaWxpdGUgLmdzIHsgZm9udC13ZWlnaHQ6IGJvbGQgfSAvKiBHZW5lcmljLlN0cm9uZyAqLwouY29kZWhpbGl0ZSAuZ3UgeyBjb2xvcjogIzgwMDA4MDsgZm9udC13ZWlnaHQ6IGJvbGQgfSAvKiBHZW5lcmljLlN1YmhlYWRpbmcgKi8KLmNvZGVoaWxpdGUgLmd0IHsgY29sb3I6ICNhYTAwMDAgfSAvKiBHZW5lcmljLlRyYWNlYmFjayAqLwouY29kZWhpbGl0ZSAua2MgeyBjb2xvcjogIzhCMDA4QjsgZm9udC13ZWlnaHQ6IGJvbGQgfSAvKiBLZXl3b3JkLkNvbnN0YW50ICovCi5jb2RlaGlsaXRlIC5rZCB7IGNvbG9yOiAjOEIwMDhCOyBmb250LXdlaWdodDogYm9sZCB9IC8qIEtleXdvcmQuRGVjbGFyYXRpb24gKi8KLmNvZGVoaWxpdGUgLmtuIHsgY29sb3I6ICM4QjAwOEI7IGZvbnQtd2VpZ2h0OiBib2xkIH0gLyogS2V5d29yZC5OYW1lc3BhY2UgKi8KLmNvZGVoaWxpdGUgLmtwIHsgY29sb3I6ICM4QjAwOEI7IGZvbnQtd2VpZ2h0OiBib2xkIH0gLyogS2V5d29yZC5Qc2V1ZG8gKi8KLmNvZGVoaWxpdGUgLmtyIHsgY29sb3I6ICM4QjAwOEI7IGZvbnQtd2VpZ2h0OiBib2xkIH0gLyogS2V5d29yZC5SZXNlcnZlZCAqLwouY29kZWhpbGl0ZSAua3QgeyBjb2xvcjogI2E3YTdhNzsgZm9udC13ZWlnaHQ6IGJvbGQgfSAvKiBLZXl3b3JkLlR5cGUgKi8KLmNvZGVoaWxpdGUgLm0geyBjb2xvcjogI0I0NTJDRCB9IC8qIExpdGVyYWwuTnVtYmVyICovCi5jb2RlaGlsaXRlIC5zIHsgY29sb3I6ICNDRDU1NTUgfSAvKiBMaXRlcmFsLlN0cmluZyAqLwouY29kZWhpbGl0ZSAubmEgeyBjb2xvcjogIzY1OGIwMCB9IC8qIE5hbWUuQXR0cmlidXRlICovCi5jb2RlaGlsaXRlIC5uYiB7IGNvbG9yOiAjNjU4YjAwIH0gLyogTmFtZS5CdWlsdGluICovCi5jb2RlaGlsaXRlIC5uYyB7IGNvbG9yOiAjMDA4YjQ1OyBmb250LXdlaWdodDogYm9sZCB9IC8qIE5hbWUuQ2xhc3MgKi8KLmNvZGVoaWxpdGUgLm5vIHsgY29sb3I6ICMwMDY4OEIgfSAvKiBOYW1lLkNvbnN0YW50ICovCi5jb2RlaGlsaXRlIC5uZCB7IGNvbG9yOiAjNzA3YTdjIH0gLyogTmFtZS5EZWNvcmF0b3IgKi8KLmNvZGVoaWxpdGUgLm5pIHsgY29sb3I6ICM1NTU1NTUgfSAvKiBOYW1lLkVudGl0eSAqLwouY29kZWhpbGl0ZSAubmUgeyBjb2xvcjogIzAwOGI0NTsgZm9udC13ZWlnaHQ6IGJvbGQgfSAvKiBOYW1lLkV4Y2VwdGlvbiAqLwouY29kZWhpbGl0ZSAubmYgeyBjb2xvcjogIzAwOGI0NSB9IC8qIE5hbWUuRnVuY3Rpb24gKi8KLmNvZGVoaWxpdGUgLm5sIHsgY29sb3I6ICM1NTU1NTUgfSAvKiBOYW1lLkxhYmVsICovCi5jb2RlaGlsaXRlIC5ubiB7IGNvbG9yOiAjMDA4YjQ1OyB0ZXh0LWRlY29yYXRpb246IHVuZGVybGluZSB9IC8qIE5hbWUuTmFtZXNwYWNlICovCi5jb2RlaGlsaXRlIC5ueCB7IGNvbG9yOiAjNTU1NTU1IH0gLyogTmFtZS5PdGhlciAqLwouY29kZWhpbGl0ZSAucHkgeyBjb2xvcjogIzU1NTU1NSB9IC8qIE5hbWUuUHJvcGVydHkgKi8KLmNvZGVoaWxpdGUgLm50IHsgY29sb3I6ICM4QjAwOEI7IGZvbnQtd2VpZ2h0OiBib2xkIH0gLyogTmFtZS5UYWcgKi8KLmNvZGVoaWxpdGUgLm52IHsgY29sb3I6ICMwMDY4OEIgfSAvKiBOYW1lLlZhcmlhYmxlICovCi5jb2RlaGlsaXRlIC5vdyB7IGNvbG9yOiAjOEIwMDhCIH0gLyogT3BlcmF0b3IuV29yZCAqLwouY29kZWhpbGl0ZSAudyB7IGNvbG9yOiAjYmJiYmJiIH0gLyogVGV4dC5XaGl0ZXNwYWNlICovCi5jb2RlaGlsaXRlIC5tYiB7IGNvbG9yOiAjQjQ1MkNEIH0gLyogTGl0ZXJhbC5OdW1iZXIuQmluICovCi5jb2RlaGlsaXRlIC5tZiB7IGNvbG9yOiAjQjQ1MkNEIH0gLyogTGl0ZXJhbC5OdW1iZXIuRmxvYXQgKi8KLmNvZGVoaWxpdGUgLm1oIHsgY29sb3I6ICNCNDUyQ0QgfSAvKiBMaXRlcmFsLk51bWJlci5IZXggKi8KLmNvZGVoaWxpdGUgLm1pIHsgY29sb3I6ICNCNDUyQ0QgfSAvKiBMaXRlcmFsLk51bWJlci5JbnRlZ2VyICovCi5jb2RlaGlsaXRlIC5tbyB7IGNvbG9yOiAjQjQ1MkNEIH0gLyogTGl0ZXJhbC5OdW1iZXIuT2N0ICovCi5jb2RlaGlsaXRlIC5zYiB7IGNvbG9yOiAjQ0Q1NTU1IH0gLyogTGl0ZXJhbC5TdHJpbmcuQmFja3RpY2sgKi8KLmNvZGVoaWxpdGUgLnNjIHsgY29sb3I6ICNDRDU1NTUgfSAvKiBMaXRlcmFsLlN0cmluZy5DaGFyICovCi5jb2RlaGlsaXRlIC5zZCB7IGNvbG9yOiAjQ0Q1NTU1IH0gLyogTGl0ZXJhbC5TdHJpbmcuRG9jICovCi5jb2RlaGlsaXRlIC5zMiB7IGNvbG9yOiAjQ0Q1NTU1IH0gLyogTGl0ZXJhbC5TdHJpbmcuRG91YmxlICovCi5jb2RlaGlsaXRlIC5zZSB7IGNvbG9yOiAjQ0Q1NTU1IH0gLyogTGl0ZXJhbC5TdHJpbmcuRXNjYXBlICovCi5jb2RlaGlsaXRlIC5zaCB7IGNvbG9yOiAjMWM3ZTcxOyBmb250LXN0eWxlOiBpdGFsaWMgfSAvKiBMaXRlcmFsLlN0cmluZy5IZXJlZG9jICovCi5jb2RlaGlsaXRlIC5zaSB7IGNvbG9yOiAjQ0Q1NTU1IH0gLyogTGl0ZXJhbC5TdHJpbmcuSW50ZXJwb2wgKi8KLmNvZGVoaWxpdGUgLnN4IHsgY29sb3I6ICNjYjZjMjAgfSAvKiBMaXRlcmFsLlN0cmluZy5PdGhlciAqLwouY29kZWhpbGl0ZSAuc3IgeyBjb2xvcjogIzFjN2U3MSB9IC8qIExpdGVyYWwuU3RyaW5nLlJlZ2V4ICovCi5jb2RlaGlsaXRlIC5zMSB7IGNvbG9yOiAjQ0Q1NTU1IH0gLyogTGl0ZXJhbC5TdHJpbmcuU2luZ2xlICovCi5jb2RlaGlsaXRlIC5zcyB7IGNvbG9yOiAjQ0Q1NTU1IH0gLyogTGl0ZXJhbC5TdHJpbmcuU3ltYm9sICovCi5jb2RlaGlsaXRlIC5icCB7IGNvbG9yOiAjNjU4YjAwIH0gLyogTmFtZS5CdWlsdGluLlBzZXVkbyAqLwouY29kZWhpbGl0ZSAudmMgeyBjb2xvcjogIzAwNjg4QiB9IC8qIE5hbWUuVmFyaWFibGUuQ2xhc3MgKi8KLmNvZGVoaWxpdGUgLnZnIHsgY29sb3I6ICMwMDY4OEIgfSAvKiBOYW1lLlZhcmlhYmxlLkdsb2JhbCAqLwouY29kZWhpbGl0ZSAudmkgeyBjb2xvcjogIzAwNjg4QiB9IC8qIE5hbWUuVmFyaWFibGUuSW5zdGFuY2UgKi8KLmNvZGVoaWxpdGUgLmlsIHsgY29sb3I6ICNCNDUyQ0QgfSAvKiBMaXRlcmFsLk51bWJlci5JbnRlZ2VyLkxvbmcgKi8=">
+    <!--header_scripts-->
+</head>
+<body>
+
+
+<div class="post">
+    
+    <div class="post_body">
+        <div class="md_div_block"><div style="height:29cm">
+
+<div class="md_div_block"><div style="text-align:center; color:#333; padding-top:7.5cm;font-size:3.5em;line-height:0.8">
+
+<p class="md_block">
+    <span class="md_line"> Mrakeditor使用（一）</span>
+</p>
+
+
+</div></div><!--md_div_block_ends-->
+
+</div></div><!--md_div_block_ends-->
+    </div>
+</div>
+
+<!--mathjax-->
+
+</body>
+</html>
+    
+  </div>
+
+          
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/GodMan.gif"
+               alt="sundapao" />
+          <p class="site-author-name" itemprop="name">sundapao</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+           
+        </div>
+        <nav class="site-state motion-element">
+        
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2009 - 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">sundapao</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+    
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+  
+  
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    // Search DB path;
+    var search_path = "";
+    if (search_path.length == 0) {
+      search_path = "search.xml";
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    function proceedsearch() {
+      $("body").append('<div class="local-search-pop-overlay">').css('overflow', 'hidden');
+      $('.popup').toggle();
+    }
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+      $.ajax({
+        url: path,
+        dataType: "xml",
+        async: true,
+        success: function( xmlResponse ) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = $( "entry", xmlResponse ).map(function() {
+            return {
+              title: $( "title", this ).text(),
+              content: $("content",this).text(),
+              url: $( "url" , this).text()
+            };
+          }).get();
+          var $input = document.getElementById(search_id);
+          var $resultContent = document.getElementById(content_id);
+          $input.addEventListener('input', function(){
+            var matchcounts = 0;
+            var str='<ul class=\"search-result-list\">';
+            var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+            $resultContent.innerHTML = "";
+            if (this.value.trim().length > 1) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var content_index = [];
+                var data_title = data.title.trim().toLowerCase();
+                var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                var data_url = decodeURIComponent(data.url);
+                var index_title = -1;
+                var index_content = -1;
+                var first_occur = -1;
+                // only match artiles with not empty titles and contents
+                if(data_title != '') {
+                  keywords.forEach(function(keyword, i) {
+                    index_title = data_title.indexOf(keyword);
+                    index_content = data_content.indexOf(keyword);
+                    if( index_title >= 0 || index_content >= 0 ){
+                      isMatch = true;
+                      if (i == 0) {
+                        first_occur = index_content;
+                      }
+                    }
+
+                  });
+                }
+                // show search results
+                if (isMatch) {
+                  matchcounts += 1;
+                  str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                  var content = data.content.trim().replace(/<[^>]+>/g,"");
+                  if (first_occur >= 0) {
+                    // cut out 100 characters
+                    var start = first_occur - 20;
+                    var end = first_occur + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if(start == 0){
+                      end = 50;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    var match_content = content.substring(start, end);
+                    // highlight all keywords
+                    keywords.forEach(function(keyword){
+                      var regS = new RegExp(keyword, "gi");
+                      match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                    });
+
+                    str += "<p class=\"search-result\">" + match_content +"...</p>"
+                  }
+                  str += "</li>";
+                }
+              })};
+            str += "</ul>";
+            if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+            if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+            $resultContent.innerHTML = str;
+          });
+          proceedsearch();
+        }
+      });}
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched == false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(function(e){
+      $('.popup').hide();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    });
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+  </script>
+
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+
+
+  
+
+</body>
+</html>
