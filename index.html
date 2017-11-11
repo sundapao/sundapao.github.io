@@ -353,7 +353,7 @@
               
                 <span class="post-meta-item-text">更新于</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-11-11T17:46:07+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2017-11-11T18:13:02+08:00">
                 2017-11-11
               </time>
             
@@ -392,7 +392,42 @@
 <p>##二级标题<br> 内容<br> 依此类推<br>图像的插入是直接拖进文章相应位置就可以了</p>
 <p><img src="./_image/胶囊衣柜.jpg?w=300&amp;r=74&amp;h=1200&amp;f=1" alt=""><br>表格语法<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">A|B|C|D|E</div><div class="line">1|2|3|4|5|</div></pre></td></tr></table></figure></p>
 <p>表格转换(饼图)语法<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">A|B|C|D|E</div><div class="line">1|2|3|4|5|</div></pre></td></tr></table></figure></p>
-<p><em>12345</em>这是斜体<br><strong>12345</strong>这是删除<br><strong><em>12345</em></strong>这是啥<br>(<a href="https://sundapao.github.io/">https://sundapao.github.io/</a>)<br><a href="https://sundapao.github.io/">https://sundapao.github.io/</a><br>文档末尾可以使用[网址注释]:<a href="https://sundapao.github.io/">https://sundapao.github.io/</a></p>
+<p><em>12345</em>这是斜体<br><strong>12345</strong>这是加粗</p>
+<p>(<a href="https://sundapao.github.io/">https://sundapao.github.io/</a>)<br><a href="https://sundapao.github.io/">https://sundapao.github.io/</a><br>文档末尾可以使用[网址注释]:<a href="https://sundapao.github.io/">https://sundapao.github.io/</a><br><a href="google.com">Google (target=_blank id=google_link)</a>其中内容括号内的target=_blank id=google_link 会自动扩展到最终 HTML 对应 A 标签下的属性，另外，google.com 作为一个域名，不需要补全http://, 最终会自动补全。<br>无序列表(-空格内容)鼠标左键点击-可以切换“完成/代办”的状态。</p>
+<ul>
+<li>[x] RED</li>
+<li>BLUE</li>
+<li>GREEN<br>有序列表(数字序号.空格内容)</li>
+</ul>
+<ol>
+<li>A</li>
+<li>B</li>
+<li>C<br>两种列表可以混排</li>
+</ol>
+<ul>
+<li>Bird<ul>
+<li>blue bird</li>
+</ul>
+</li>
+<li>McHale<ol>
+<li>a man</li>
+<li>HoustonRockets</li>
+</ol>
+</li>
+<li>[]Parish<br>文本默认居左<br>[我是居中的文本]<br>[我是居右的文本]]<blockquote>
+<p>引用<br>符号和引用源之间有一个空格</p>
+</blockquote>
+</li>
+<li><ul>
+<li><ul>
+<li>-三个以上构成分割线<br>// 这是 MarkEditor 的特别支持!<br>/// 多了一个/，也是注释，但最终注释内容不会出现在源码中。<br>注释后的内容，最终会以 HTML 的注释格式<!--我是内容-->存在，不会显示在正文中，但包含在 HTML 的源码中；如果是///开头的，则也不包括在源码中。<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">s = &apos;hello world&apos;</div><div class="line">p=1</div><div class="line">p=2</div><div class="line">print(p)</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">实现代码高亮:n是显示代码行数</div></pre></td></tr></table></figure>
 
           
         
